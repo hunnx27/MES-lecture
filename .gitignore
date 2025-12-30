@@ -1,1 +1,4 @@
 2.1스프링부트-MQTT수신소스/target
+.vscode/settings.json
+센서/__pycache__/python_sensor_with_mqtt.cpython-311.pyc
+센서/__pycache__/python_sensor.cpython-311.pyc
