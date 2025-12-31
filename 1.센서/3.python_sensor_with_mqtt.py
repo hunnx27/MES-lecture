@@ -63,6 +63,7 @@ def generate_sensor_data(equipment_id):
     speed = random.randint(950, 1000)
 
     # provide epoch ms timestamp to match microcontroller style (millis())
+    timestamp = datetime.now().isoformat()
     timestamp_ms = int(datetime.now().timestamp() * 1000)
 
     return {
@@ -70,8 +71,9 @@ def generate_sensor_data(equipment_id):
         'temperature': temperature,
         'pressure': pressure,
         'vibration': vibration,
-        'timestamp': timestamp_ms,
-        'speed': speed
+        'speed': speed,
+        'timestamp': timestamp,
+        'timestamp_ms': timestamp_ms
     }
 
 # ==========================================
