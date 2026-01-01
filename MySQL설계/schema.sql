@@ -9,7 +9,8 @@ CREATE TABLE sensor_log (
     pressure DOUBLE,
     vibration DOUBLE,
     speed INT,
-    timestamp BIGINT NOT NULL,
+    timestamp TIMESTAMP NOT NULL,
+    timestamp_ms BIGINT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     INDEX idx_equipment_id (equipment_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='센서 로그';
